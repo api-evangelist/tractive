@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://github.com/Tractive and public package registries (npm, PyPI)
+note: >-
+  Tractive publishes NO official/first-party API client library or SDK. It has
+  no public developer API — the only HTTP API (api.tractive.com) is a private
+  backend for the Tractive mobile/web apps. The packages listed below are
+  UNOFFICIAL, community-built clients that reverse-engineer that private API and
+  explicitly state they are not affiliated with Tractive GmbH. They are recorded
+  here for discovery only; none are official (official: false on every entry),
+  so no `SDKs` rating pointer is emitted.
+packages:
+  - language: python
+    registry: pypi
+    name: aiotractive
+    url: https://pypi.org/project/aiotractive/
+    repo: https://github.com/zhulik/aiotractive
+    install: pip install aiotractive
+    official: false
+    description: >-
+      Unofficial asynchronous Python client for the Tractive REST API,
+      reverse-engineered from the Tractive web app; authenticates with account
+      email + password. Not affiliated with Tractive GmbH.
+  - language: python
+    registry: github
+    name: PyTractive
+    url: https://github.com/drrobotk/PyTractive
+    install: git clone https://github.com/drrobotk/PyTractive
+    official: false
+    description: >-
+      Unofficial Python scripts to interact with the Tractive GPS API with
+      extended functionality. Community project, not affiliated with Tractive.
+  - language: javascript
+    registry: github
+    name: FAXES/tractive
+    url: https://github.com/FAXES/tractive
+    install: npm install (from source)
+    official: false
+    description: >-
+      Unofficial Node.js wrapper for the Tractive GPS tracker API. Community
+      project, not created or maintained by Tractive.

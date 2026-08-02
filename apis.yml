@@ -1,7 +1,30 @@
 aid: tractive
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tractive.png
 name: Tractive
-description: Tractive is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Tractive is an Austrian pet-technology company, founded in October 2012 in
+  Pasching, Austria and led by CEO Michael Hurnaus, that builds GPS location and
+  health-monitoring trackers for dogs and cats. Its collar-attached devices
+  (such as the DOG and CAT GPS trackers) pair with a subscription mobile app to
+  deliver real-time worldwide location, virtual fences, activity, sleep and, more
+  recently, resting heart-rate and respiratory-rate health intelligence to more
+  than 1.4 million active subscribers. Tractive was acquired by Italy's Bending
+  Spoons in 2026. Tractive does NOT publish a public developer API, SDK, or
+  developer portal — its backend HTTP API (api.tractive.com) is private to its
+  own apps; the only clients are unofficial, community reverse-engineered
+  libraries. This profile enriches the company's identity for the API Evangelist
+  network; there is no official API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/tractive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,48 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Pet Technology
+- GPS Tracking
+- IoT
+- Location
+- Wearables
+- Consumer Hardware
+- Health Monitoring
 apis: []
+common:
+- type: VulnerabilityDisclosure
+  url: security/tractive-vulnerability-disclosure.yml
+- type: Security
+  url: https://tractive.com/en/l/vulnerability-disclosure
+  name: Vulnerability Disclosure Policy
+- type: DomainSecurity
+  url: security/tractive-domain-security.yml
+- type: WellKnown
+  url: well-known/tractive-well-known.yml
+- type: SecurityTxt
+  url: well-known/tractive-security.txt
+- type: Website
+  url: https://tractive.com/
+  name: Tractive Website
+- type: Blog
+  url: https://tractive.com/blog/en
+  name: Tractive Blog
+- type: GitHubOrganization
+  url: https://github.com/Tractive
+  name: Tractive on GitHub
+- type: Packages
+  url: packages/tractive-packages.yml
+  name: Community client libraries (unofficial)
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
